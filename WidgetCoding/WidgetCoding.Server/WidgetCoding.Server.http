@@ -1,0 +1,10 @@
+@WidgetCoding.Server_HostAddress = https://localhost:44364
+
+
+GET {{WidgetCoding.Server_HostAddress}}/api/widgets
+
+###
+
+GET {{WidgetCoding.Server_HostAddress}}/api/Widgets/categories
+
+###
