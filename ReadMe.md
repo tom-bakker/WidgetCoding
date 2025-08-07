@@ -31,6 +31,8 @@ I have used Bootstrap-Vue-Next for the styling of the webpages and componenets i
 I originally used Bootstrap-Vue, however due to its incompatibility with Vue 3 and Bootstrap 5, moved to 
 Boostrap-Vue-Next as recommended by the contributors to Bootstrap-Vue. 
 
+Bootstrap Vue Next : https://bootstrap-vue-next.github.io/bootstrap-vue-next/
+
 ## Assumptions and Decisions
 
 1. Date added to be stored as UTC.
