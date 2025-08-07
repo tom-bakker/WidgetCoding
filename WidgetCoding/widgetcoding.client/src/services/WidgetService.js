@@ -1,28 +1,30 @@
 import { apiService } from './apiService.js';
 
-export const widgetService = {
+const WIDGET_URI = '/widgets';
 
+export const widgetService = {
+  
   async getWidgetsAsync() {
-    return apiService.getAsync('/widgets');
+    return apiService.getAsync(WIDGET_URI);
   },
 
   async getWidgetAsync(id) {
-    return apiService.getAsync(`/widgets/${id}`);
+    return apiService.getAsync(`${WIDGET_URI}/${id}`);
   },
 
   async createWidgetAsync(widgetData) {
-    return apiService.postAsync('/widgets', widgetData);
+    return apiService.postAsync(WIDGET_URI, widgetData);
   },
 
   async updateWidgetAsync(id, widgetData) {
-    return apiService.putAsync(`/widgets/${id}`, widgetData);
+    return apiService.putAsync(`${WIDGET_URI}/${id}`, widgetData);
   },
 
   async deleteWidgetAsync(id) {
-    return apiService.deleteAsync(`/widgets/${id}`);
+    return apiService.deleteAsync(`${WIDGET_URI}/${id}`);
   },
 
   async getCategoriesAsync() {
-    return apiService.getAsync('/widgets/categories');
+    return apiService.getAsync(`${WIDGET_URI}/categories`);
   }
 };
